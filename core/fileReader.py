@@ -13,6 +13,3 @@ class FileReader:
             if not data:
                 break
             yield data
-
-a = FileReader("1.txt")
-a.read()
