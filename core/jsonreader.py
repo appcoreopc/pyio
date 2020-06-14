@@ -12,7 +12,7 @@ class JsonReader:
         except ValueError as e:
             return False
         return True
-         
+
     def readdata(self, jsondata):
         for jdx in jsondata:
             print(jdx)
@@ -26,6 +26,3 @@ class JsonReader:
                     print("list")
                 print(type(cjdx))
                 print(cjdx)
- 
-x = JsonReader("2.json")
-x.read()
