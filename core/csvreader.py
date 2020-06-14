@@ -15,9 +15,7 @@ class CsvFileReader:
                     print("----------------")
                     del chunk[:] 
                 chunk.append(l)
-                    
-
-
+            function(chunk)
 
 ###### how to use it ##########
 # x = CsvFileReader("1.csv")
