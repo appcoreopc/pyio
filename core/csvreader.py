@@ -10,9 +10,7 @@ class CsvFileReader:
             reader = csv.reader(f)
             for i, l in enumerate(reader):
                 if (i % chunksize == 0 and i > 0):
-                    print("----------------")
                     function(chunk)
-                    print("----------------")
                     del chunk[:] 
                 chunk.append(l)
             function(chunk)
